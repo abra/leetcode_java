@@ -2,10 +2,17 @@ package leetcode.problems.medium.p0007;
 
 public class ReverseInteger {
     public static void main(String[] args) {
-        System.out.println(reverse(-321));
+        System.out.println(new Solution().reverse(-321));
     }
 
-    static int reverse(int x) {
+}
+
+//
+// https://leetcode.com/problems/reverse-integer/
+//
+class Solution {
+
+    public int reverse(int x) {
         boolean negative = false;
         if (x < 0) {
             negative = true;
