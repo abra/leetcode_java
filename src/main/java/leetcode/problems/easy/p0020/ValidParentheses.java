@@ -4,7 +4,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Objects;
 
-// @{link} https://leetcode.com/problems/valid-parentheses/submissions/
 public class ValidParentheses {
     public static void main(String[] args) {
         System.out.println(new Solution().isValid("(])"));      // false
@@ -12,6 +11,9 @@ public class ValidParentheses {
     }
 }
 
+//
+// https://leetcode.com/problems/valid-parentheses
+//
 class Solution {
     public boolean isValid(String s) {
         String[] p = s.split("");
