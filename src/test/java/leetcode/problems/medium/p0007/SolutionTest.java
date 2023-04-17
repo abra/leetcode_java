@@ -38,4 +38,14 @@ class SolutionTest {
 
     assertEquals(expected, result);
   }
+
+  @Test
+  @DisplayName("Reverse 1010. Should return 101")
+  void reverseInteger4() {
+    int input = 1010;
+    int expected = 101;
+    int result = new Solution().reverse(input);
+
+    assertEquals(expected, result);
+  }
 }
