@@ -1,14 +1,5 @@
 package leetcode.problems.medium.p0151;
 
-public class ReverseWordsInString {
-    public static void main(String[] args) {
-        System.out.println(new Solution().reverseWords("the sky is blue"));
-    }
-}
-
-//
-// https://leetcode.com/problems/reverse-words-in-a-string/
-//
 class Solution {
     public String reverseWords(String s) {
 
