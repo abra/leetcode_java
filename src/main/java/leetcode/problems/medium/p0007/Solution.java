@@ -1,6 +1,6 @@
 package leetcode.problems.medium.p0007;
 
-class Solution {
+public class Solution {
 
     public int reverse(int x) {
         boolean negative = false;

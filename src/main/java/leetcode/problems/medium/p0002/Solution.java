@@ -1,6 +1,6 @@
 package leetcode.problems.medium.p0002;
 
-class Solution {
+public class Solution {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
     if (l1.next == null && l2.next == null && l1.val + l2.val < 10) {
