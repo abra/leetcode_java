@@ -3,19 +3,7 @@ package leetcode.problems.hard.p0032;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class LongestValidParentheses {
-
-    public static void main(String[] args) {
-
-        System.out.println(new Solution().longestValidParentheses(")()()())())"));
-
-    }
-}
-
-//
-// https://leetcode.com/problems/longest-valid-parentheses/
-//
-class Solution {
+public class Solution {
 
     public int longestValidParentheses(String s) {
 
