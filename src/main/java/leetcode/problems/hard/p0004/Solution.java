@@ -1,19 +1,6 @@
 package leetcode.problems.hard.p0004;
 
-public class MedianOfTwoSortedArrays {
-    public static void main(String[] args) {
-        int[] a = {1, 2, 3, 33};
-        int[] b = {2, 3, 44};
-
-        System.out.println(new Solution().findMedianSortedArrays(a, b));
-    }
-
-}
-
-//
-// https://leetcode.com/problems/median-of-two-sorted-arrays/
-//
-class Solution {
+public class Solution {
 
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int[] c = new int[nums1.length + nums2.length];
