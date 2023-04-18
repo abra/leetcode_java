@@ -38,4 +38,14 @@ class SolutionTest {
 
     assertEquals(expected, result);
   }
+
+  @Test
+  @DisplayName("Input: \"Do or do not. There is no try - Yoda\". Should return: \"Yoda - try no is There not. do or Do\"")
+  void reverseWords4() {
+    String input = "Do or do not. There is no try - Yoda";
+    String expected = "Yoda - try no is There not. do or Do";
+    String result = new Solution().reverseWords(input);
+
+    assertEquals(expected, result);
+  }
 }
