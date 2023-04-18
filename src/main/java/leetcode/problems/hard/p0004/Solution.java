@@ -2,37 +2,37 @@ package leetcode.problems.hard.p0004;
 
 public class Solution {
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int[] c = new int[nums1.length + nums2.length];
+  public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    int[] c = new int[nums1.length + nums2.length];
 
-        int counter = 0;
-        int aIndex = 0;
-        int bIndex = 0;
+    int counter = 0;
+    int aIndex = 0;
+    int bIndex = 0;
 
-        while (counter < c.length) {
+    while (counter < c.length) {
 
-            if (aIndex <= nums1.length - 1 && bIndex <= nums2.length - 1 && nums1[aIndex] < nums2[bIndex]) {
-                c[counter] = nums1[aIndex];
-                aIndex++;
-                counter++;
-            } else if (aIndex <= nums1.length - 1 && bIndex <= nums2.length - 1 && nums1[aIndex] >= nums2[bIndex]) {
-                c[counter] = nums2[bIndex];
-                bIndex++;
-                counter++;
-            } else if (aIndex == nums1.length && bIndex < nums2.length) {
-                c[counter] = nums2[bIndex];
-                bIndex++;
-                counter++;
-            } else if (aIndex < nums1.length && bIndex == nums2.length) {
-                c[counter] = nums1[aIndex];
-                aIndex++;
-                counter++;
-            }
+      if (aIndex <= nums1.length - 1 && bIndex <= nums2.length - 1 && nums1[aIndex] < nums2[bIndex]) {
+        c[counter] = nums1[aIndex];
+        aIndex++;
+        counter++;
+      } else if (aIndex <= nums1.length - 1 && bIndex <= nums2.length - 1 && nums1[aIndex] >= nums2[bIndex]) {
+        c[counter] = nums2[bIndex];
+        bIndex++;
+        counter++;
+      } else if (aIndex == nums1.length && bIndex < nums2.length) {
+        c[counter] = nums2[bIndex];
+        bIndex++;
+        counter++;
+      } else if (aIndex < nums1.length && bIndex == nums2.length) {
+        c[counter] = nums1[aIndex];
+        aIndex++;
+        counter++;
+      }
 
-        }
-
-        return c.length % 2 == 0
-                ? (double) (c[c.length / 2 - 1] + c[c.length / 2]) / 2
-                : c[c.length / 2];
     }
+
+    return c.length % 2 == 0
+        ? (double) (c[c.length / 2 - 1] + c[c.length / 2]) / 2
+        : c[c.length / 2];
+  }
 }

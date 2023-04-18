@@ -3,7 +3,7 @@ package leetcode.problems.hard.p0032;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/longest-valid-parentheses/
 @DisplayName("Leetcode Problem #32. Longest Valid Parentheses")

@@ -3,7 +3,8 @@ package leetcode.problems.easy.p0009;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // https://leetcode.com/problems/palindrome-number/
 @DisplayName("Leetcode Problem #9. Palindrome Number")

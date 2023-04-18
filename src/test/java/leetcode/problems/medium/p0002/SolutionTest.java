@@ -3,7 +3,7 @@ package leetcode.problems.medium.p0002;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/add-two-numbers/
 @DisplayName("Leetcode Problem #2. Add Two Numbers (Number as ListNode)")

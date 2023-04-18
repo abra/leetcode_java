@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/two-sum
 @DisplayName("Leetcode Problem #1. Two Sum")
@@ -25,7 +25,7 @@ class SolutionTest {
   @Test
   @DisplayName("Input: nums = [3,2,4], target = 6. Should return: [1,2]")
   void twoSum2() {
-    int[] nums = {3,2,4};
+    int[] nums = {3, 2, 4};
     int target = 6;
     int[] expected = {1, 2};
     int[] result = new Solution().twoSum(nums, target);
@@ -36,7 +36,7 @@ class SolutionTest {
   @Test
   @DisplayName("Input: nums = [3,3], target = 6. Should return: [0,1]")
   void twoSum3() {
-    int[] nums = {3,3};
+    int[] nums = {3, 3};
     int target = 6;
     int[] expected = {0, 1};
     int[] result = new Solution().twoSum(nums, target);

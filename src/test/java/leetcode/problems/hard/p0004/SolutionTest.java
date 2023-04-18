@@ -3,7 +3,7 @@ package leetcode.problems.hard.p0004;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
 @DisplayName("Leetcode Problem #4. Median of Two Sorted Arrays")
