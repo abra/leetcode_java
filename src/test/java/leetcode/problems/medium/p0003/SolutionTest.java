@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
-@DisplayName("Leetcode Problem #3. Longest Substring Without Repeating Characters:w")
+@DisplayName("Leetcode Problem #3. Longest Substring Without Repeating Characters")
 class SolutionTest {
 
   @Test
