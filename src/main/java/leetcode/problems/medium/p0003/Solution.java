@@ -15,8 +15,7 @@ public class Solution {
     for (int i = 0, j = 0; i < ch.length; i++) {
 
       if (list.contains(ch[i])) {
-        int index = list.lastIndexOf(ch[i]);
-        list.subList(0, index + 1).clear();
+        list.subList(0, list.lastIndexOf(ch[i]) + 1).clear();
         list.add(ch[i]);
         i = j++;
         continue;
