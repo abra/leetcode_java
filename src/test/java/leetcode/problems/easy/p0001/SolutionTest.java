@@ -19,6 +19,9 @@ class SolutionTest {
     int[] expected = {0, 1};
     int[] result = new Solution().twoSum(nums, target);
 
+    Arrays.sort(expected);
+    Arrays.sort(result);
+
     assertArrayEquals(expected, result);
   }
 
@@ -29,6 +32,9 @@ class SolutionTest {
     int target = 6;
     int[] expected = {1, 2};
     int[] result = new Solution().twoSum(nums, target);
+
+    Arrays.sort(expected);
+    Arrays.sort(result);
 
     assertArrayEquals(expected, result);
   }
@@ -41,6 +47,9 @@ class SolutionTest {
     int[] expected = {0, 1};
     int[] result = new Solution().twoSum(nums, target);
 
+    Arrays.sort(expected);
+    Arrays.sort(result);
+
     assertArrayEquals(expected, result);
   }
 
@@ -51,7 +60,51 @@ class SolutionTest {
     int target = 4;
     int[] expected = {0, 1};
     int[] result = new Solution().twoSum(nums, target);
-    System.out.println(Arrays.toString(result));
+
+    Arrays.sort(expected);
+    Arrays.sort(result);
+
+    assertArrayEquals(expected, result);
+  }
+
+  @Test
+  @DisplayName("Input: nums = [2,5,5,11], target = 10. Should return: [1,2]")
+  void twoSum5() {
+    int[] nums = {2, 5, 5, 11};
+    int target = 10;
+    int[] expected = {1, 2};
+    int[] result = new Solution().twoSum(nums, target);
+
+    Arrays.sort(expected);
+    Arrays.sort(result);
+
+    assertArrayEquals(expected, result);
+  }
+
+  @Test
+  @DisplayName("Input: nums = [8,13,34,21,11,9], target = 22. Should return: [1,5]")
+  void twoSum6() {
+    int[] nums = {8, 13, 35, 21, 11, 9};
+    int target = 22;
+    int[] expected = {1, 5};
+    int[] result = new Solution().twoSum(nums, target);
+
+    Arrays.sort(expected);
+    Arrays.sort(result);
+
+    assertArrayEquals(expected, result);
+  }
+
+  @Test
+  @DisplayName("Input: nums = [0,4,3,0], target = 0. Should return: [0,3]")
+  void twoSum7() {
+    int[] nums = {0,4,3,0};
+    int target = 0;
+    int[] expected = {0, 3};
+    int[] result = new Solution().twoSum(nums, target);
+
+    Arrays.sort(expected);
+    Arrays.sort(result);
 
     assertArrayEquals(expected, result);
   }
