@@ -28,7 +28,6 @@ public class SolutionTest {
   void removeDuplicates2() {
     int[] nums = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
     int result = new Solution().removeDuplicates(nums);
-    System.out.println(Arrays.toString(nums));
     int expected = 5;
 
     assertEquals(expected, result);
