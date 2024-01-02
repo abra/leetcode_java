@@ -7,21 +7,20 @@ public class Solution {
 
   public int longestValidParentheses(String s) {
 
-    if (s.isEmpty() || s.isBlank()) return 0;
+    if (s.isEmpty()) return 0;
 
-    String[] parentheses = s.split("");
+    char[] chars = s.toCharArray();
+    Deque<Character> stack = new ArrayDeque<>();
+    Deque<Integer> indices = new ArrayDeque<>();
 
-    Deque<String> stack = new ArrayDeque<>();
-    Deque<Integer> indexes = new ArrayDeque<>();
+    for (int i = 0; i < chars.length; i++) {
 
-    for (int i = 0; i < parentheses.length; i++) {
-
-      if (!stack.isEmpty() && stack.peek().equals("(") && parentheses[i].equals(")")) {
-        indexes.pollLast();
+      if (!stack.isEmpty() && stack.peek() == '(' && chars[i] == ')') {
+        indices.pollLast();
         stack.poll();
       } else {
-        indexes.addLast(i);
-        stack.addFirst(parentheses[i]);
+        indices.addLast(i);
+        stack.addFirst(chars[i]);
       }
 
     }
@@ -29,10 +28,10 @@ public class Solution {
     int counter = 0;
     int max = 0;
 
-    for (int i = 0; i < parentheses.length; i++) {
+    for (int i = 0; i < chars.length; i++) {
 
-      if (!indexes.isEmpty() && i == indexes.peekFirst()) {
-        indexes.pollFirst();
+      if (!indices.isEmpty() && i == indices.peekFirst()) {
+        indices.pollFirst();
         counter = 0;
       } else {
         counter++;
