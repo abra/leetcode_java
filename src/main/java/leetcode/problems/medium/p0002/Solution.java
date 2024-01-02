@@ -2,42 +2,33 @@ package leetcode.problems.medium.p0002;
 
 public class Solution {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    ListNode dummy = new ListNode(0);
+    ListNode current = dummy;
+    int carry = 0;
 
-    if (l1.next == null && l2.next == null && l1.val + l2.val < 10) {
-      return new ListNode(l1.val + l2.val);
-    }
+    while (l1 != null || l2 != null) {
+      int sum = carry;
 
-    ListNode listNode = new ListNode();
-    ListNode current = listNode;
-
-    ListNode a = l1;
-    ListNode b = l2;
-
-    while (a != null || b != null) {
-      int num = current.val;
-
-      if (a != null) num += a.val;
-      if (b != null) num += b.val;
-
-      if (num >= 10) {
-        current.val = num % 10;
-        current.next = new ListNode(num / 10);
-      } else {
-
-        current.val = num;
-
-        if ((a != null && a.next != null) || (b != null && b.next != null)) {
-          current.next = new ListNode(0);
-        }
-
+      if (l1 != null) {
+        sum += l1.val;
+        l1 = l1.next;
       }
 
+      if (l2 != null) {
+        sum += l2.val;
+        l2 = l2.next;
+      }
+
+      carry = sum / 10;
+      current.next = new ListNode(sum % 10);
       current = current.next;
-      a = (a != null) ? a.next : null;
-      b = (b != null) ? b.next : null;
     }
 
-    return listNode;
+    if (carry > 0) {
+      current.next = new ListNode(carry);
+    }
+
+    return dummy.next;
   }
 }
 
