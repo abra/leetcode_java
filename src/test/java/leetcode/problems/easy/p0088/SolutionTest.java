@@ -38,4 +38,24 @@ class SolutionTest {
     new Solution().merge(nums1, 0, nums2, 1);
     assertArrayEquals(expected, nums1);
   }
+
+  @Test
+  @DisplayName("Input: nums1 = [2,0], m = 1, nums2 = [1], n = 1. Should return: [1,2]")
+  void merge4() {
+    int[] nums1 = {2, 0};
+    int[] nums2 = {1};
+    int[] expected = {1, 2};
+    new Solution().merge(nums1, 1, nums2, 1);
+    assertArrayEquals(expected, nums1);
+  }
+
+  @Test
+  @DisplayName("Input: nums1 = [-1,-1,0,0,0,0], m = 4, nums2 = [-1,0], n = 2. Should return: [-1,-1,-1,0,0,0]")
+  void merge5() {
+    int[] nums1 = {-1, -1, 0, 0, 0, 0};
+    int[] nums2 = {-1, 0};
+    int[] expected = {-1, -1, -1, 0, 0, 0};
+    new Solution().merge(nums1, 4, nums2, 2);
+    assertArrayEquals(expected, nums1);
+  }
 }
