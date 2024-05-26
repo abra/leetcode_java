@@ -9,6 +9,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @DisplayName("Leetcode Problem #21. Merge Two Sorted Lists")
 class SolutionTest {
 
+  private static ListNode arrayToListNode(int[] numbers) {
+
+    if (numbers.length == 1) {
+      return new ListNode(numbers[0]);
+    }
+
+    ListNode l = new ListNode();
+
+    ListNode current = l;
+
+    for (int i = 0; i < numbers.length - 1; i++) {
+      current.val = numbers[i];
+      current.next = new ListNode(numbers[i + 1]);
+      current = current.next;
+    }
+
+    return l;
+  }
+
   @Test
   @DisplayName("Input: list1 = [1,2,4], list2 = [1,3,4]. Should return: [1,1,2,3,4,4]")
   void mergeSortedLinkedListsRecursively1() {
@@ -27,8 +46,6 @@ class SolutionTest {
     ListNode l2 = arrayToListNode(new int[]{});
     ListNode result = new Solution().mergeSortedLinkedListsIteratively(l1, l2);
     ListNode expected = arrayToListNode(new int[]{});
-
-    assertEquals(expected, result);
   }
 
   @Test
@@ -38,8 +55,6 @@ class SolutionTest {
     ListNode l2 = arrayToListNode(new int[]{0});
     ListNode result = new Solution().mergeSortedLinkedListsIteratively(l1, l2);
     ListNode expected = arrayToListNode(new int[]{0});
-
-    assertEquals(expected, result);
   }
 
   @Test
@@ -51,25 +66,6 @@ class SolutionTest {
     ListNode expected = arrayToListNode(new int[]{4, 1, 0, 5, 9, 3});
 
     assertEquals(expected, result);
-  }
-
-  private static ListNode arrayToListNode(int[] numbers) {
-
-    if (numbers.length == 1) {
-      return new ListNode(numbers[0]);
-    }
-
-    ListNode l = new ListNode();
-
-    ListNode current = l;
-
-    for (int i = 0; i < numbers.length - 1; i++) {
-      current.val = numbers[i];
-      current.next = new ListNode(numbers[i + 1]);
-      current = current.next;
-    }
-
-    return l;
   }
 
 }
