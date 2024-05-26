@@ -10,13 +10,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SolutionTest {
 
   @Test
-  @DisplayName("Input: haystack = \"sadbutsad\", needle = \"sad\". Output: 0")
+  @DisplayName("Input: haystack = \"sadbutsad\", needle = \"sad\". Should return: 0")
   void strStr1() {
     assertEquals(0, new Solution().strStr("sadbutsad", "sad"));
   }
 
   @Test
-  @DisplayName("Input: haystack = \"leetcode\", needle = \"leeto\". Output: -1")
+  @DisplayName("Input: haystack = \"leetcode\", needle = \"leeto\". Should return: -1")
   void strStr2() {
     assertEquals(-1, new Solution().strStr("leetcode", "leeto"));
   }
