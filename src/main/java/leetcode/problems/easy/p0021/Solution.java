@@ -2,29 +2,35 @@ package leetcode.problems.easy.p0021;
 
 public class Solution {
 
-  public ListNode mergeSortedLinkedListsIteratively(ListNode l1, ListNode l2) {
+  // Leetcode problem #21. Merge Two Sorted Lists
+  public ListNode mergeSortedLinkedListsIteratively(ListNode list1, ListNode list2) {
 
-    if (l1.next == null && l2.next == null) {
-      return new ListNode();
+    if (list1 == null) {
+      return list2;
+    }
+    if (list2 == null) {
+      return list1;
     }
 
-    ListNode head = new ListNode(0);
-    ListNode node = head;
-
-    while (l1 != null && l2 != null) {
-      if (l1.val <= l2.val) {
-        node.next = l1;
-        l1 = l1.next;
+    ListNode result = new ListNode();
+    ListNode current = result;
+    while (list1 != null || list2 != null) {
+      if (list1 == null) {
+        current.next = list2;
+        list2 = list2.next;
+      } else if (list2 == null) {
+        current.next = list1;
+        list1 = list1.next;
+      } else if (list1.val < list2.val) {
+        current.next = list1;
+        list1 = list1.next;
       } else {
-        node.next = l2;
-        l2 = l2.next;
+        current.next = list2;
+        list2 = list2.next;
       }
-      node = node.next;
+      current = current.next;
     }
-
-    if (l1 != null) node.next = l1;
-    if (l2 != null) node.next = l2;
-    return head.next;
+    return result.next;
   }
 }
 
