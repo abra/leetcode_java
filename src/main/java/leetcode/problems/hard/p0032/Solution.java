@@ -6,7 +6,6 @@ import java.util.Deque;
 public class Solution {
 
   public int longestValidParentheses(String s) {
-
     if (s.isEmpty()) return 0;
 
     char[] chars = s.toCharArray();
@@ -14,7 +13,6 @@ public class Solution {
     Deque<Integer> indices = new ArrayDeque<>();
 
     for (int i = 0; i < chars.length; i++) {
-
       if (!stack.isEmpty() && stack.peek() == '(' && chars[i] == ')') {
         indices.pollLast();
         stack.poll();
@@ -22,14 +20,12 @@ public class Solution {
         indices.addLast(i);
         stack.addFirst(chars[i]);
       }
-
     }
 
     int counter = 0;
     int max = 0;
 
     for (int i = 0; i < chars.length; i++) {
-
       if (!indices.isEmpty() && i == indices.peekFirst()) {
         indices.pollFirst();
         counter = 0;
