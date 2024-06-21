@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
-@DisplayName("Leetcode Problem #4. Median of Two Sorted Arrays")
+@DisplayName("LeetCode Problem #4. Median of Two Sorted Arrays")
 class SolutionTest {
 
   @Test

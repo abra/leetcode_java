@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 // https://leetcode.com/problems/longest-palindromic-substring/
-@DisplayName("Leetcode Problem #5. Longest Palindromic Substring")
+@DisplayName("LeetCode Problem #5. Longest Palindromic Substring")
 class SolutionTest {
 
   @Test

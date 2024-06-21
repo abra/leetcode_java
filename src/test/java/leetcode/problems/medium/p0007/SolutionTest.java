@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/reverse-integer/
-@DisplayName("Leetcode Problem #7. Reverse Integer")
+@DisplayName("LeetCode Problem #7. Reverse Integer")
 class SolutionTest {
 
   @Test

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/trapping-rain-water
-@DisplayName("Leetcode Problem #42. Trapping Rain Water")
+@DisplayName("LeetCode Problem #42. Trapping Rain Water")
 class SolutionTest {
 
   @Test

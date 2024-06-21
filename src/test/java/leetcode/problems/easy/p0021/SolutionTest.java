@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/merge-two-sorted-lists/
-@DisplayName("Leetcode Problem #21. Merge Two Sorted Lists")
+@DisplayName("LeetCode Problem #21. Merge Two Sorted Lists")
 class SolutionTest {
 
   private static ListNode arrayToListNode(int[] numbers) {

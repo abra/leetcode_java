@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 //https://leetcode.com/problems/happy-number/
-@DisplayName("LeetCode #202. Happy Number")
+@DisplayName("LeetCode Problem #202. Happy Number")
 class SolutionTest {
 
   @Test

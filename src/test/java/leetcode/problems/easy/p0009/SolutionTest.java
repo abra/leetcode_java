@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // https://leetcode.com/problems/palindrome-number/
-@DisplayName("Leetcode Problem #9. Palindrome Number")
+@DisplayName("LeetCode Problem #9. Palindrome Number")
 class SolutionTest {
 
   @Test

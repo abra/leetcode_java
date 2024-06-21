@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/sort-colors/
-@DisplayName("LeetCode problem #75. Sort Colors")
+@DisplayName("LeetCode Problem #75. Sort Colors")
 class SolutionTest {
 
   @Test

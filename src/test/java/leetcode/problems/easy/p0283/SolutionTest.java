@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/move-zeroes/
-@DisplayName("LeetCode problem #283. Move Zeroes")
+@DisplayName("LeetCode Problem #283. Move Zeroes")
 class SolutionTest {
 
   @Test

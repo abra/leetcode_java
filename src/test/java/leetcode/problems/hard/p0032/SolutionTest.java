@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/longest-valid-parentheses/
-@DisplayName("Leetcode Problem #32. Longest Valid Parentheses")
+@DisplayName("LeetCode Problem #32. Longest Valid Parentheses")
 class SolutionTest {
 
   @Test

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/roman-to-integer/
-@DisplayName("Leetcode Problem #13. Roman to Integer")
+@DisplayName("LeetCode Problem #13. Roman to Integer")
 class SolutionTest {
 
   @Test

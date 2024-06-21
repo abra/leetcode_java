@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/contains-duplicate/
-@DisplayName("Leetcode Problem #217. Contains Duplicate")
+@DisplayName("LeetCode Problem #217. Contains Duplicate")
 class SolutionTest {
   @Test
   @DisplayName("Input nums = [1,2,3,1]. Should return: true")

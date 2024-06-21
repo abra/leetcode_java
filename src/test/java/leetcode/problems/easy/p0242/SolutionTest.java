@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/valid-anagram/
-@DisplayName("Leetcode Problem #242. Valid Anagram")
+@DisplayName("LeetCode Problem #242. Valid Anagram")
 class SolutionTest {
   @Test
   @DisplayName("Input: s = 'anagram', t = 'nagaram'. Output: true")

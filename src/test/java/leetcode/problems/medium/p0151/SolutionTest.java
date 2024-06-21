@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/reverse-words-in-a-string/
-@DisplayName("Leetcode Problem #151. Reverse Words in a String")
+@DisplayName("LeetCode Problem #151. Reverse Words in a String")
 class SolutionTest {
 
   @Test

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/longest-common-prefix/
-@DisplayName("Leetcode Problem #14. Longest Common Prefix")
+@DisplayName("LeetCode Problem #14. Longest Common Prefix")
 class SolutionTest {
 
   @Test

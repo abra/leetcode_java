@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/product-of-array-except-self/
-@DisplayName("LeetCode problem #238. Product of Array Except Self")
+@DisplayName("LeetCode Problem #238. Product of Array Except Self")
 class SolutionTest {
 
   @Test

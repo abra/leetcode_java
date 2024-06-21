@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/top-k-frequent-elements/
-@DisplayName("LeetCode problem #347. Top K Frequent Elements")
+@DisplayName("LeetCode Problem #347. Top K Frequent Elements")
 class SolutionTest {
 
   @Test

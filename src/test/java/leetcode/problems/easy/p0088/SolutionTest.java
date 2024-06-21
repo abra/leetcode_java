@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/merge-sorted-array/
-@DisplayName("LeetCode #88. Merge Sorted Array")
+@DisplayName("LeetCode Problem #88. Merge Sorted Array")
 class SolutionTest {
 
   @Test

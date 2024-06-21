@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/longest-consecutive-sequence
-@DisplayName("LeetCode Problem #128: Longest Consecutive Sequence")
+@DisplayName("LeetCode Problem #128. Longest Consecutive Sequence")
 class SolutionTest {
 
   @Test

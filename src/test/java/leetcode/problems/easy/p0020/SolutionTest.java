@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // https://leetcode.com/problems/valid-parentheses
-@DisplayName("Leetcode Problem #20. Valid Parentheses")
+@DisplayName("LeetCode Problem #20. Valid Parentheses")
 class SolutionTest {
 
   @Test

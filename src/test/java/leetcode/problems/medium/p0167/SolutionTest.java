@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-@DisplayName("Leetcode Problem #167. Two Sum II - Input Array Is Sorted")
+@DisplayName("LeetCode Problem #167. Two Sum II - Input Array Is Sorted")
 class SolutionTest {
 
   @Test

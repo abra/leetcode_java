@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-@DisplayName("Leetcode Problem #26. Remove Duplicates from Sorted Array")
+@DisplayName("LeetCode Problem #26. Remove Duplicates from Sorted Array")
 public class SolutionTest {
 
   @Test

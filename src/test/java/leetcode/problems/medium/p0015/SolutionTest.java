@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/3sum/
-@DisplayName("Leetcode Problem #15. 3Sum")
+@DisplayName("LeetCode Problem #15. 3Sum")
 class SolutionTest {
 
   @Test

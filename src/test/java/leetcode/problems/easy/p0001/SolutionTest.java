@@ -8,7 +8,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 // https://leetcode.com/problems/two-sum
-@DisplayName("Leetcode Problem #1. Two Sum")
+@DisplayName("LeetCode Problem #1. Two Sum")
 class SolutionTest {
 
   @Test

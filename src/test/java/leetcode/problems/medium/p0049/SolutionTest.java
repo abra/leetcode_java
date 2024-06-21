@@ -11,7 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 // https://leetcode.com/problems/group-anagrams/
-@DisplayName("LeetCode problem #49. Group Anagrams")
+@DisplayName("LeetCode Problem #49. Group Anagrams")
 class SolutionTest {
 
   private List<List<String>> sortListOfLists(List<List<String>> listOfLists) {
