@@ -20,4 +20,10 @@ class SolutionTest {
   void strStr2() {
     assertEquals(-1, new Solution().strStr("leetcode", "leeto"));
   }
+
+  @Test
+  @DisplayName("Input: haystack = \"mississippi\", needle = \"issip\". Should return: 4")
+  void strStr3() {
+    assertEquals(4, new Solution().strStr("mississippi", "issip"));
+  }
 }
