@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+// https://leetcode.com/problems/length-of-last-word/
+@DisplayName("LeetCode Problem #58. Length of Last Word")
 class SolutionTest {
 
   @Test
